@@ -1,0 +1,52 @@
+
+
+<table id="grid">
+    </table>
+    <div>
+        <fieldset id="editOptions" class="explorer">
+            <legend>Edit settings</legend>
+            <input type="checkbox" id="showButtons" checked="checked"></input><label for="showButtons">Show Done/Cancel Buttons</label>
+            <label for="editMode">Edit mode</label>
+            <select id="editMode">
+                <option selected="selected">row</option>
+                <option>cell</option>
+                <option>dialog</option>
+                <option>none</option>
+            </select>
+           
+        </fieldset>
+
+        <fieldset id="deletingOptions" class="explorer">
+            <legend>Deleting settings</legend>
+            <input type="checkbox" id="enableDelete" checked="checked"></input>
+            <label for="enableDelete">Enable Delete Row</label>
+            <br />
+            <label for="rowSelect">Select Row Index</label>
+            <span id="rowSelect"></span>
+            <br />
+            <input type="button" id="deleteRow" value="Delete row"></input>
+        </fieldset>
+        <div style="clear:both;"></div>
+        <fieldset id="addingOptions">
+            <legend>Adding settings</legend>
+
+            <input type="checkbox" id="enableAddRow" checked="checked"></input><label for="enableAddRow">Enable Add Row</label>
+            
+                <ul class="addNewRow">
+                    <li><label for="colunmnname">colunmnname</label>
+                        <input id="columnname" type="text"></input>
+                    </li>
+                    <li><label for="columntype">columntype</label>
+                        <input id="columntype" type="text"></input>
+                    </li>
+                    <li><label for="editable">editable</label>
+                        <input id="editable" type="text"></input>
+                    </li>
+                    
+                        
+                    <li> <label>&nbsp;</label><input id="addRow" type="button" value="Add row"></input></li>
+                </ul>
+        </fieldset>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="api-viewer"></div>
